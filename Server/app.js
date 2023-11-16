@@ -53,9 +53,6 @@ const URL = process.env.MONGOURL;
 mongoose.connect(URL).then(() => console.log('Connected'));
 
 // Routes
-app.use('/', (req, res) => {
-  res.send('Hello, World!');
-});
 app.use('/api/items', itemRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/chat', chatRoutes);
