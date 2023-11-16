@@ -1,0 +1,19 @@
+.additem-button {
+  position:fixed;
+  right: 2%;
+  bottom: 4%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 1000;
+  border: none;
+  background-color: rgb(70, 85, 151);
+  color: white;
+  font-size: 3rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.additem-button:hover {
+  transform: scale(1.2);
+}

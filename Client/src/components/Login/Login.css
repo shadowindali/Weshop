@@ -1,0 +1,99 @@
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.show-button {
+  display: none;
+}
+
+.login-full-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(33, 33, 33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  height: 75vh;
+  width: 30vw;
+  background-color: rgb(218, 212, 212);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login-image {
+  height: 75vh;
+  width: 30vw;
+  background: url("img-3.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login-image button {
+  bottom: 20%;
+  color: rgb(191, 200, 208);
+  background-color: rgb(55, 51, 88);
+}
+
+.login-image button:hover {
+  background-color: black;
+}
+
+.login,
+.signup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  animation: mymove 1.5s;
+}
+
+.error {
+  color: red;
+  width: 80%;
+  font-size: 80%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-image {
+    display: none;
+  }
+
+  .login-container {
+    border-radius: 10px;
+    width: 80vw;
+  }
+
+  .show-button {
+    display: block;
+  }
+
+  .login-container {
+    height: 85vh;
+  }
+}

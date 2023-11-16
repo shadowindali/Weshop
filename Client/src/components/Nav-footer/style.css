@@ -1,0 +1,184 @@
+/* Navbar.css */
+.navbar {
+  height: 8vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  padding: 15px 0 15px 0;
+  background-color: rgb(70, 85, 151);
+  width: 100%;
+}
+
+.logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  margin-left: 5vw;
+  flex: 0.4;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex: 0.4;
+  gap: 25px;
+}
+
+.nav-item {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: black;
+}
+
+.menu-button-nav {
+  display: none;
+  position: absolute;
+  /* left: 50%; */
+  width: 40px;
+  background: none;
+}
+
+.background-mobile {
+  z-index: 1001;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+.menu-button-nav svg {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.navbar button {
+  flex: 0.1;
+  position: absolute;
+  right: 5%;
+  font-size: 1.03rem;
+  height: 5vh;
+  border-radius: 20px;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navbar button:hover {
+  transform: scale(1.2);
+}
+
+.profile-page {
+  flex: 0.2;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-page p {
+  color: white;
+  transition: 0.5s;
+  font-family: "Lucida Sans";
+  font-size: 1.5rem;
+}
+
+.profile-page img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.profile-page:hover > p {
+  color: black !important;
+}
+
+.profile-page:hover {
+  cursor: pointer;
+}
+
+.mobile-view {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(60, 78, 156, 0.69);
+}
+
+.nav-item-mobile {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.nav-item-mobile a {
+  color: white;
+  list-style: none;
+  z-index: 10000;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 50px;
+}
+
+.nav-item-mobile a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-page {
+    margin-right: 65vw;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-button-nav {
+    left: 85% !important;
+  }
+
+  .navbar button {
+    right: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .user-name-nav {
+    display: none;
+  }
+
+  .menu-button-nav {
+    display: block;
+    left: 50%;
+  }
+}

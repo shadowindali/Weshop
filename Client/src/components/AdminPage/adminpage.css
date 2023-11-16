@@ -1,0 +1,145 @@
+.admin-page-full-container {
+  display: flex;
+  background-color: rgb(50, 66, 137);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.admin-page-container {
+  width: 90vw;
+  min-height: 90vh;
+  background-color: #fff;
+}
+
+.admin-page-head {
+  height: 15vh;
+  background: linear-gradient(180deg, rgb(44, 53, 94), black);
+  color: White;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.admin-page-head h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.user-card {
+  background-color: #cecece;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  align-items: center;
+  display: grid;
+  padding-right: 10px;
+  padding-left: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  height: 8vh;
+  width: auto;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.users-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.not-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  flex: 1;
+}
+
+.back-button {
+  /* margin-right: 30px; */
+  font-size: medium;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: red;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  transform: scale(1.2);
+}
+
+.item-card-admin {
+  margin: 10px 0 0 0;
+  border: solid black 1px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.item-card-admin img {
+  width: 300px;
+  height: 150px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-fit: cover;
+}
+
+.item-card-admin span {
+  color: red;
+  font-weight: 900;
+}
+
+.two-buttons {
+  display: flex;
+  /* gap: 10px; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.two-buttons button {
+  transition: 0.4s;
+  width: 100%;
+  height: 30px;
+  background: none;
+  border: none;
+  color: white;
+  /* border-radius: 100px; */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  font-size: large;
+}
+
+.two-buttons button:hover {
+  transform: scale(1.2);
+}
+
+.items-container-admin {
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .user-card {
+    grid-template-columns: repeat(1, 2fr);
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .back-button {
+    width: 55px;
+  }
+}

@@ -1,0 +1,32 @@
+.additem-full-container {
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+}
+
+.additem-container {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.additem-container button {
+    /* width: 40%; */
+    font-size: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    border: none;
+    transition: 0.4s;
+}
+
+.additem-container button:hover {
+    background-color: red;
+}
+
+.image-input {
+    border: none;
+}
